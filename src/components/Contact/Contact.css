@@ -1,0 +1,106 @@
+.contact-form {
+  padding: 3rem;
+  display: flex;
+  height: 80vh;
+  margin-top: 4rem;
+}
+
+.c-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+  padding-top: 10%;
+}
+
+.contact-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  width: 150px;
+  background-color: #f9f9f9;
+  border: 2px solid var(--orange);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card a {
+  margin-top: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.github {
+  color: #333;
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.whatsapp {
+  color: #25d366;
+}
+
+.c-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.c-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.user {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid var(--orange);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+}
+.contact-link{
+  color: var(--orange);
+}
+.button {
+  padding: 0.75rem;
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .contact-form {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contact-cards-container {
+    justify-content: flex-start;
+  }
+}

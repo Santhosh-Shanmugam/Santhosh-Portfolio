@@ -1,0 +1,91 @@
+.Edu {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Title Styling */
+.Edu_title {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Description Styling */
+.Edu_description {
+  font-size: 18px;
+  color: #F5C32C;
+  margin-bottom: 50px;
+}
+
+/* Education Section */
+.Edu_sec {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual Education Card */
+
+
+/* Icons */
+.icon {
+  font-size: 50px;
+  color: #FCA61F;
+  margin-bottom: 0px;
+}
+
+/* Degree Title */
+.Edu_degree {
+  font-size: 26px;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Institution Name */
+.Edu_institution {
+  font-size: 18px;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+/* Score Styling */
+.Edu_score {
+  font-weight: 80%;
+  font-size: 16px;
+  color: #FCA61F;
+  font-size: large;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Edu_card {
+    width: 240px;
+  }
+
+  .Edu_title {
+    font-size: 32px;
+  }
+
+  .Edu_description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Edu_card {
+    width: 100%;
+  }
+
+  .Edu_title {
+    font-size: 28px;
+  }
+
+  .Edu_description {
+    font-size: 14px;
+  }
+}
