@@ -1,22 +1,44 @@
 .contact-form {
-  padding: 3rem;
-  display: flex;
-  height: 80vh;
-  margin-top: 4rem;
-}
-
-.c-left {
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  flex: 1;
-  padding-top: 10%;
+  align-items: center;
+  margin-top: 2rem;
 }
 
+.contact-heading {
+  color: var(--orange);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.contact-subheading {
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.c-left, .c-right {
+  flex: 1;
+}
+.c-left{
+  flex-direction: row;
+}
 .contact-cards-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: center;
 }
 
@@ -24,45 +46,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   text-align: center;
-  width: 150px;
-  background-color: #f9f9f9;
+  background-color: #fff;
   border: 2px solid var(--orange);
 }
 
 .contact-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .contact-card a {
   margin-top: 0.5rem;
   text-decoration: none;
   font-weight: bold;
+  color: var(--orange);
 }
 
-.github {
-  color: #333;
-}
-
-.linkedin {
-  color: #0077b5;
-}
-
-.whatsapp {
-  color: #25d366;
-}
-
-.c-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
+.github { color: #333; }
+.linkedin { color: #0077b5; }
+.whatsapp { color: #25d366; }
 
 .c-right form {
   display: flex;
@@ -80,12 +88,8 @@
   font-size: 16px;
 }
 
-textarea {
-  height: 100px;
-}
-.contact-link{
-  color: var(--orange);
-}
+textarea { height: 100px; }
+
 .button {
   padding: 0.75rem;
   background-color: var(--orange);
@@ -93,14 +97,18 @@ textarea {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.button:hover { background-color: darkorange; }
+
 @media screen and (max-width: 768px) {
-  .contact-form {
+  .contact-container {
     flex-direction: column;
-    height: auto;
+    align-items: center;
   }
 
   .contact-cards-container {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }

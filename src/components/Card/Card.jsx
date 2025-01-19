@@ -6,7 +6,7 @@ const Card = ({emoji, heading, detail, color}) => {
     <div className="card" style={{borderColor: {color}}}> 
       <img src={emoji} alt="" />
       <span>{heading}</span>
-      <span>{detail}</span>
+      <span >{detail}</span>
     </div>
   );
 };

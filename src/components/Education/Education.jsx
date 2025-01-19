@@ -15,20 +15,20 @@ const Education = () => {
       <div className="Edu_sec">
         <div className="Edu_card">
           <FaGraduationCap className="icon" />
-          <h2 className="Edu_degree">BE CSE</h2>
-          <p className="Edu_institution">Kongu Engineering College</p>
-          <p className="Edu_score">CGPA: 8.34*</p>
+          <h2 className="Edu_degree" style={{ color: darkMode ? "white" : "" }}>BE CSE</h2>
+          <p className="Edu_institution" style={{ color: darkMode ? "white" : "" }}>Kongu Engineering College</p>
+          <p className="Edu_score" >CGPA: 8.34*</p>
         </div>
         <div className="Edu_card">
           <FaSchool className="icon" />
-          <h2 className="Edu_degree">HSC</h2>
-          <p className="Edu_institution">Velavan Matric Hr Sec School</p>
+          <h2 className="Edu_degree" style={{ color: darkMode ? "white" : "" }}>HSC</h2>
+          <p className="Edu_institution" style={{ color: darkMode ? "white" : "" }}>Velavan Matric Hr Sec School</p>
           <p className="Edu_score">92.5%</p>
         </div>
         <div className="Edu_card">
           <FaSchool className="icon" />
-          <h2 className="Edu_degree">SSLC</h2>
-          <p className="Edu_institution">Velavan Matric Hr Sec School</p>
+          <h2 className="Edu_degree" style={{ color: darkMode ? "white" : "" }}>SSLC</h2>
+          <p className="Edu_institution" style={{ color: darkMode ? "white" : "" }}>Velavan Matric Hr Sec School</p>
           <p className="Edu_score">87%</p>
         </div>
       </div>
