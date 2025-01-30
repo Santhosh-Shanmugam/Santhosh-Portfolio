@@ -28,7 +28,7 @@ const Intro = () => {
         <div className="i-name">
           <span style={{ color: darkMode ? "white" : "" }}>Hey! I Am</span>
           <span>Santhosh S</span>
-          <span style={{ color: darkMode ? "white" : "" }}>
+          <span style={{ color: darkMode ? "white" : "",width:"400px" }}>
           A passionate Full Stack Developer with expertise in both front-end and back-end technologies, delivering high-quality, user-centric web applications. Skilled in crafting responsive and visually appealing web designs, ensuring optimal user experiences, and writing efficient, scalable code. Committed to producing top-notch solutions that meet both functional and aesthetic requirements.
           </span>
         </div>
@@ -71,7 +71,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Ui/Ux" text2="designer" />
+          <FloatinDiv img={thumbup} text1="Ui/Ux" text2="Designer" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>

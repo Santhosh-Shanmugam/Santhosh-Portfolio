@@ -73,8 +73,9 @@
 .whatsapp { color: #25d366; }
 
 .c-right form {
+  padding-top: 35px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
   width: 100%;
   max-width: 400px;
@@ -90,17 +91,18 @@
 
 textarea { height: 100px; }
 
-.button {
+.button-contact {
   padding: 0.75rem;
   background-color: var(--orange);
   color: white;
   border: none;
+  width: 100px;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.button:hover { background-color: darkorange; }
+.button-contact:hover { background-color: darkorange; }
 
 @media screen and (max-width: 768px) {
   .contact-container {

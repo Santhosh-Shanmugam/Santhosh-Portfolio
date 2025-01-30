@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from "react";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp ,FaVoicemail,FaMailBulk} from "react-icons/fa";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context";
@@ -76,17 +76,27 @@ const Contact = () => {
                 WhatsApp
               </a>
             </div>
+            {/* <div className="contact-card whatsapp">
+              <FaMailBulk size={32} />
+              <a
+                href="https://wa.me/919345645016"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-link"
+              >
+                Gmail.com
+              </a>
+            </div> */}
           </div>
         </div>
 
         {/* Right side form */}
         <div className="c-right">
           <form ref={form} onSubmit={sendEmail}>
-            <input type="text" name="user_name" className="user" placeholder="Name" required />
-            <input type="email" name="user_email" className="user" placeholder="Email" required />
-            <textarea name="message" className="user" placeholder="Message" required></textarea>
-            <input type="submit" value="Send" className="button" />
-            <span>{done && "Thanks for Contacting me"}</span>
+            {/* <input type="text" name="user_name" className="user" placeholder="Name" required />
+            <input type="email" name="user_email" className="user" placeholder="Email" required /> */}
+            <input name="message" className="user" placeholder="Message" required></input>
+            <input type="submit" value="Send" className="button-contact" />
           </form>
         </div>
       </div>
