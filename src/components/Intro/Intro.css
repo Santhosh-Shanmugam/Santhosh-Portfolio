@@ -105,7 +105,12 @@
     gap: 7rem;
     height: 64rem;
   }
-
+  .i-left{
+    padding-left: 10px;
+  }
+  .des{
+    width: 50%;
+  }
   .i-right {
     transform: scale(0.8);
     left: -3rem;

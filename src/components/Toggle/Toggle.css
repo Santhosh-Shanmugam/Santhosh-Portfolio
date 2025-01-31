@@ -18,3 +18,10 @@
     background: var(--orange);
     position: absolute;
 }
+@media screen and (max-width: 480px){
+    .toggle{
+        
+    }
+
+}
+    

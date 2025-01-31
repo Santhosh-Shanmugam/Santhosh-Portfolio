@@ -48,4 +48,8 @@
   .n-list {
     display: none;
   }
+  .n-name{
+    font-size: 2.5rem;
+    padding-left: 10px;
+  }
 }

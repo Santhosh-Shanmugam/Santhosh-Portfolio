@@ -9,7 +9,6 @@ import crown from "../../img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -28,7 +27,7 @@ const Intro = () => {
         <div className="i-name">
           <span style={{ color: darkMode ? "white" : "" }}>Hey! I Am</span>
           <span>Santhosh S</span>
-          <span style={{ color: darkMode ? "white" : "",width:"400px" }}>
+          <span className="des"style={{ color: darkMode ? "white" : "",width:"400px" }}>
           A passionate Full Stack Developer with expertise in both front-end and back-end technologies, delivering high-quality, user-centric web applications. Skilled in crafting responsive and visually appealing web designs, ensuring optimal user experiences, and writing efficient, scalable code. Committed to producing top-notch solutions that meet both functional and aesthetic requirements.
           </span>
         </div>
