@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer">
       <img src={Wave} alt="" style={{ width: "100%" , height: "250px"}} />
       <div className="f-content">
-        <span className="footer-tag">All rights reserved || Made by Santhosh</span>
+        {/* <span className="footer-tag">All rights reserved || Made by Santhosh</span> */}
       </div>
     </div>
   );

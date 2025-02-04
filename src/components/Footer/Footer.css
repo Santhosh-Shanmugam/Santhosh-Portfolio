@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   align-items: center;
-  margin: -0.5rem -3.5rem;
+  margin: -0.4rem -2.5rem;
   position: relative;
   margin-top: 0%;
 }
@@ -21,8 +21,5 @@
 @media screen and (max-width: 480px){
   .f-content{
     transform: scale(.5);
-  }
-  .footer-tag{
-    font-size: 2.5rem;
   }
 }

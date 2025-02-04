@@ -16,7 +16,7 @@
 .n-name {
   font-size: 2rem;
   font-weight: bold;
-  padding-left: 50px;
+  padding-left: 100px;
 }
 .n-right {
   flex: 1;
@@ -31,7 +31,7 @@
 }
 .n-list > ul {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   margin-right: 4rem;
 }
 
@@ -50,6 +50,6 @@
   }
   .n-name{
     font-size: 2.5rem;
-    padding-left: 10px;
+    padding-left: 1px;
   }
 }
