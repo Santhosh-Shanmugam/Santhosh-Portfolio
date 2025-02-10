@@ -39,7 +39,7 @@
   height: 2rem;
 }
 .i-icons {
-  margin-top: 1.2rem;
+  margin-top: 0.4rem;
   display: flex;
   gap: 0rem;
 }
@@ -53,10 +53,11 @@
 .i-right {
   flex: 1;
   position: relative;
+  margin-left: -190px;
 }
 .me{
-  padding-bottom: 175%;
-  padding-right: 75%;
+  padding-bottom: 150%;
+  padding-right: 95%;
   position:absolute;
 }
 .i-right > * {
@@ -113,12 +114,100 @@
   }
   .i-right {
     transform: scale(0.8);
-    left: -3.4rem;
+    left: 0.4rem;
   }
   .i-right .blur {
     display: none;
   }
   .floating-div:nth-of-type(1){
     top: -7rem;
+  }
+  .vec1.vec2{
+    padding-bottom: 90px;
+  }
+  .me{
+    padding-bottom: -80px;
+  }
+}
+
+
+/* Floating Icons on Right */
+.floating-icons {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+/* Circular Background for Icons */
+.floating-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Icons inside Circles */
+.floating-icon {
+  font-size: 24px;
+  color: #3498db;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.floating-circle:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+.floating-circle:hover .floating-icon {
+  color: white;
+}
+
+/* Active (currently viewed section) */
+.active .floating-circle {
+  background-color: #e74c3c !important;
+}
+
+.active .floating-icon {
+  color: white !important;
+}
+
+@media screen and (max-width: 768px) {
+  .floating-icons {
+    display: none;
+  }
+
+  .Intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .i-left {
+    align-items: center;
+  }
+
+  .des {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .i-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .i-icons {
+    justify-content: center;
   }
 }

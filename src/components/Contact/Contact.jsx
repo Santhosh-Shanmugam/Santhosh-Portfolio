@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from "react";
-import { FaGithub, FaLinkedin, FaWhatsapp ,FaVoicemail,FaMailBulk} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context";

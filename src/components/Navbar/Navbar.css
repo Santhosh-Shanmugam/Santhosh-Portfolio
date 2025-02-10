@@ -53,3 +53,80 @@
     padding-left: 1px;
   }
 }
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-menu li {
+  display: inline-block;
+}
+
+.nav-icon {
+  font-size: 24px;
+  color: #3498db;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer; /* Ensures icons are clickable */
+}
+
+.nav-icon:hover {
+  color: #2980b9;
+  transform: scale(1.2);
+}
+
+.active {
+  color: #e74c3c !important; /* Changes color when active */
+}
+
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-menu li {
+  display: inline-block;
+}
+
+/* Circular Background */
+.nav-circle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* Light grey background */
+  border-radius: 50%; /* Makes it circular */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Icon inside circle */
+.nav-icon {
+  font-size: 24px;
+  color: #3498db;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-circle:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+.nav-circle:hover .nav-icon {
+  color: white;
+}
+
+/* Active (currently viewed section) */
+.active .nav-circle {
+  background-color: #e74c3c !important; /* Active section background */
+}
+
+.active .nav-icon {
+  color: white !important;
+}

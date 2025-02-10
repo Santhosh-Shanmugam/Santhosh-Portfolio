@@ -9,17 +9,17 @@ import { motion } from "framer-motion";
 import Resume from './resume.pdf';
 
 const Services = () => {
-  // context
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
-  // transition
+  
   const transition = {
     duration: 3,
     type: "spring",
   };
 
   return (
+    <section id="services">
     <div className="services" id="services">
       {/* left side */}
       <div className="awesome">
@@ -78,6 +78,7 @@ const Services = () => {
         ></div>
       </div>
     </div>
+    </section>
   );
 };
 
