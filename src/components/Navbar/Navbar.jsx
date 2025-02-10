@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className="n-wrapper" id="Navbar">
       {/* Left Section */}
       <div className="n-left">
-        <div className="n-name">Portfolio</div>
+        <div className="n-name">Portfolio.</div>
         <Toggle />
       </div>
 

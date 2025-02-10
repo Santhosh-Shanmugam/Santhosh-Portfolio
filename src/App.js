@@ -4,6 +4,7 @@ import Education from "./components/Education/Education";
 import Services from "./components/Services/Services";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Certificates from "./components/Certificates/Certificates";
 import { useContext } from "react";
 import { themeContext } from "./Context";
 import "./App.css";
@@ -22,6 +23,7 @@ function App() {
       <Intro />
       <Education />
       <Services />
+      <Certificates/>
       <Contact />
       <Footer />
     </div>
