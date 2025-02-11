@@ -40,16 +40,16 @@ const Skills = () => {
   const darkMode = state.darkMode;
 
   return (
-    <section id="skills" style={{ color: darkMode ? "white" : "black", padding: "50px 0" }}>
+    <section id="skills" style={{ color: darkMode ? "white" : "", padding: "50px 0" }}>
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", position: "relative", zIndex: 1 }}>
         <div style={{ maxWidth: "1100px", width: "100%", display: "flex", flexDirection: "column", alignItems: "center", gap: "12px" }}>
           
-          <h1 style={{ color:"var(--orange)",fontSize: "42px", fontWeight: "600", marginTop: "20px", textAlign: "center" }}>
+          <h1 style={{  color: darkMode ? "white" : "",fontSize: "42px", fontWeight: "600", marginTop: "20px", textAlign: "center" }}>
             Skills
           </h1>
           
-          <p style={{ fontSize: "18px", textAlign: "center", maxWidth: "600px", color: darkMode ? "#bbbbbb" : "#444444" }}>
-            Here are some of my skills on which I have been working on for the past 2 years.
+          <p style={{ fontSize: "18px", textAlign: "center", maxWidth: "600px", color: "var(--orange)" }}>
+            Here are some of my skills on which I have been working on for the past 1 years.
           </p>
 
           <div style={{ width: "100%", display: "flex", flexWrap: "wrap", marginTop: "30px", gap: "30px", justifyContent: "center" }}>
