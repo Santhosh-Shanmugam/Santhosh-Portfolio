@@ -3,6 +3,8 @@ import Intro from "./components/Intro/Intro";
 import Education from "./components/Education/Education";
 import Services from "./components/Services/Services";
 import Skills from "./components/Skills/Skills";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { useContext } from "react";
@@ -21,11 +23,13 @@ function App() {
     >
       <Navbar />
       <Intro />
+      <About/>
       <Education />
       <Skills/>
       <Services />
+      <Projects />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -1,0 +1,150 @@
+:root {
+    --yellow: #F5C32C;
+    --orange: #FCA61F;
+    --black: #242D49;
+    --gray: #788097;
+    --blueCard: #DDF8FE;
+    --purple: rgb(238, 210, 255);
+    --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Container */
+  .skills-container {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Dark Theme */
+  .skills-container.dark {
+    background-color: var(--black);
+    color: white;
+  }
+  
+  /* Light Theme */
+  .skills-container.light {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Wrapper */
+  .skills-wrapper {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  /* Title */
+  .skills-title {
+    font-size: 42px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  
+  /* Description */
+  .skills-desc {
+    font-size: 18px;
+    max-width: 600px;
+    color: var(--orange);
+  }
+  
+  /* Grid Layout */
+  .skills-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  /* Skill Category Card */
+  .skill-category {
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    border: 1px solid var(--gray);
+    box-shadow: var(--boxShadow);
+    border-radius: 16px;
+    padding: 18px 36px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Dark Mode for Skill Category */
+  .skills-container.dark .skill-category {
+    background: #1e1e1e;
+    border: 1px solid var(--purple);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 24px;
+  }
+  
+  /* Skill Title */
+  .skill-title {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Skill Items */
+  .skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  /* Skill Badge */
+  .skill-item {
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    color: white;
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  /* Dark Mode for Skill Badge */
+  .skills-container.dark .skill-item {
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+  }
+  
+  /* Hover Effect */
+  .skill-item:hover {
+    background: var(--orange);
+    color: black;
+  }
+  
+  /* Skill Icons */
+  .skill-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .skills-title {
+      font-size: 32px;
+    }
+    .skills-desc {
+      font-size: 16px;
+    }
+  }
+  

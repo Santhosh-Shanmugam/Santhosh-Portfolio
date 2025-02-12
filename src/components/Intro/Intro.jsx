@@ -12,7 +12,8 @@ import LinkedIn from "../../img/linkedin.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-import { FaHome, FaBriefcase, FaCertificate, FaProjectDiagram, FaEnvelope, FaTools } from "react-icons/fa";
+import { FaHome, FaBriefcase, FaCertificate, FaProjectDiagram, FaEnvelope, FaTools, FaPrescription, FaRProject, FaLaptop } from "react-icons/fa";
+import { FaDiagramProject } from "react-icons/fa6";
 
 const Intro = () => {
   // Transition
@@ -56,8 +57,8 @@ const Intro = () => {
         <Link to="services" spy={true} smooth={true} duration={500}>
           <div className="floating-circle"><FaProjectDiagram className="floating-icon" /></div>
         </Link>
-        <Link to="certifications" spy={true} smooth={true} duration={500}>
-          <div className="floating-circle"><FaCertificate className="floating-icon" /></div>
+        <Link to="projects" spy={true} smooth={true} duration={500}>
+          <div className="floating-circle"><FaLaptop className="floating-icon" /></div>
         </Link>
         <Link to="contact" spy={true} smooth={true} duration={500}>
           <div className="floating-circle"><FaEnvelope className="floating-icon" /></div>

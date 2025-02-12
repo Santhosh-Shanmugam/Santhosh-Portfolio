@@ -42,7 +42,7 @@ const Services = () => {
           <Card
             emoji={HeartEmoji}
             heading={"Quality Work"}
-            detail={"Agile development, bug-free code, testing, code review, optimizing performance"}
+            detail={"Agile development, bug-free code, testing, optimizing performance"}
           />
         </motion.div>
         {/* second card */}

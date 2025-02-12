@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <div className="contact-form" id="contact">
       <h2 className="contact-heading">Get in Touch</h2>
-      <p className="contact-subheading" style={{ color: darkMode ? "white" : "" }}>Reach out through any platform or send us a message directly.</p>
+      <p className="contact-subheading" style={{ color: darkMode ? "white" : "" }}>Reach out through any platform or send a message directly.</p>
       
       <div className="contact-container">
         {/* Left side for contact cards */}
