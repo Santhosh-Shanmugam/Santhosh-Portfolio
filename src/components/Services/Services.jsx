@@ -24,10 +24,10 @@ const Services = () => {
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
-        <span style={{ color: darkMode ? "white" : "" }}>Services</span>
-        <span>what I offer</span>
+        <span style={{ color: darkMode ? "white" : "",fontFamily: "Arial Narrow, Arial, sans-serif" }}>Services</span>
+        <span style={{fontFamily: "Arial Narrow, Arial, sans-serif"}}>what I offer</span>
         <a href={Resume} download>
-          <button className="button s-button">Download CV</button>
+          <button className="button s-button" style={{fontFamily: "Arial Narrow, Arial, sans-serif"}}>Download CV</button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>

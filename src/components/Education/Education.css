@@ -10,13 +10,15 @@
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-family: 'Arial Narrow', Arial, sans-serif
 }
 
 /* Description Styling */
 .Edu_description {
   font-size: 18px;
-  color: #F5C32C;
+  color: var(--orange);
   margin-bottom: 50px;
+  font-family: 'Arial Narrow', Arial, sans-serif
 }
 
 /* Education Section */
@@ -25,6 +27,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 20px;
+  font-family: 'Arial Narrow', Arial, sans-serif
 }
 
 /* Individual Education Card */
@@ -43,6 +46,7 @@
   color: #2c3e50;
   font-weight: bold;
   margin-bottom: 10px;
+  font-family: 'Arial Narrow', Arial, sans-serif
 }
 
 /* Institution Name */
@@ -50,6 +54,7 @@
   font-size: 18px;
   color: #34495e;
   margin-bottom: 15px;
+  font-family: 'Arial Narrow', Arial, sans-serif
 }
 
 /* Score Styling */
@@ -59,6 +64,7 @@
   color: #FCA61F;
   font-size: large;
   font-weight: bold;
+  font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Responsive Design */

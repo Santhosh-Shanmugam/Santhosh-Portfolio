@@ -11,6 +11,7 @@
   justify-content: left;
   display: flex;
   gap: 2rem;
+  font-family: 'Arial Narrow', Arial, sans-serif
 }
 
 .n-name {

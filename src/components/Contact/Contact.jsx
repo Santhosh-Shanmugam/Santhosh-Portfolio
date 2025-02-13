@@ -1,106 +1,114 @@
-import React, { useContext, useRef, useState } from "react";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import "./Contact.css";
-import emailjs from "@emailjs/browser";
+import React, { useContext } from "react";
 import { themeContext } from "../../Context";
+import "./Contact.css";
 
 const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-  const form = useRef();
-  const [done, setDone] = useState(false);
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_n98r5kg",
-        "template_sqzmtw9",
-        form.current,
-        "FMMONw9VhTdLJaqAs"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true);
-          form.current.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
 
   return (
-    <div className="contact-form" id="contact">
-      <h2 className="contact-heading">Get in Touch</h2>
-      <p className="contact-subheading" style={{ color: darkMode ? "white" : "" }}>Reach out through any platform or send a message directly.</p>
-      
-      <div className="contact-container">
-        {/* Left side for contact cards */}
-        <div className="c-left">
-          <div className="contact-cards-container">
-            <div className="contact-card github">
-              <FaGithub size={32} />
-              <a
-                href="https://github.com/Santhosh-Shanmugam"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="contact-link"
-              >
-                GitHub
-              </a>
-            </div>
+    <section id="contact">
+    <div className="contact-icons" style={{ color: darkMode ? "white" : "black" }}>
+      <h2 className="contact-heading">Connect with Me</h2>
+      <p className="contact-subheading">Find me on these platforms:</p>
 
-            <div className="contact-card linkedin">
-              <FaLinkedin size={32} />
-              <a
-                href="https://www.linkedin.com/in/santhosh-s-167110254/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="contact-link"
-              >
-                LinkedIn
-              </a>
-            </div>
-
-            <div className="contact-card whatsapp">
-              <FaWhatsapp size={32} />
-              <a
-                href="https://wa.me/919345645016"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="contact-link"
-              >
-                WhatsApp
-              </a>
-            </div>
-            {/* <div className="contact-card whatsapp">
-              <FaMailBulk size={32} />
-              <a
-                href="https://wa.me/919345645016"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="contact-link"
-              >
-                Gmail.com
-              </a>
-            </div> */}
-          </div>
+      <div className="contact-cards-container">
+        {/* GitHub */}
+        <div 
+          className="contact-card" 
+          style={{ backgroundColor: darkMode ? "#1e1e1e" : "#ffffff" }}
+        >
+          <img
+            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+            alt="GitHub"
+            className="contact-logo"
+          />
+          <a
+            href="https://github.com/Santhosh-Shanmugam"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            GitHub
+          </a>
         </div>
 
-        {/* Right side form */}
-        <div className="c-right">
-          <form ref={form} onSubmit={sendEmail}>
-            {/* <input type="text" name="user_name" className="user" placeholder="Name" required />
-            <input type="email" name="user_email" className="user" placeholder="Email" required /> */}
-            <input name="message" className="user" placeholder="Message" required></input>
-            <input type="submit" value="Send" className="button-contact" />
-          </form>
+        {/* LeetCode */}
+        <div 
+          className="contact-card"
+          style={{ backgroundColor: darkMode ? "#1e1e1e" : "#ffffff" }}
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+            alt="LeetCode"
+            className="contact-logo"
+          />
+          <a
+            href="https://leetcode.com/Santhosh_S2005"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            LeetCode
+          </a>
+        </div>
+
+        {/* LinkedIn */}
+        <div 
+          className="contact-card"
+          style={{ backgroundColor: darkMode ? "#1e1e1e" : "#ffffff" }}
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+            alt="LinkedIn"
+            className="contact-logo"
+          />
+          <a
+            href="https://www.linkedin.com/in/santhosh-s-167110254/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            LinkedIn
+          </a>
+        </div>
+
+        {/* WhatsApp */}
+        <div 
+          className="contact-card"
+          style={{ backgroundColor: darkMode ? "#1e1e1e" : "#ffffff" }}
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+            alt="WhatsApp"
+            className="contact-logo"
+          />
+          <a
+            href="https://wa.me/919345645016"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            WhatsApp
+          </a>
+        </div>
+
+        {/* Gmail */}
+        <div 
+          className="contact-card"
+          style={{ backgroundColor: darkMode ? "#1e1e1e" : "#ffffff" }}
+          onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=santhoshs.22cse@kongu.edu", "_blank")}
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"
+            alt="Gmail"
+            className="contact-logo"
+          />
+          <span className="contact-link">Gmail</span>
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

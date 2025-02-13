@@ -13,7 +13,7 @@ const Projects = () => {
 
         {/* Toggle Button Group */}
         <div className="toggle-group">
-          {["All", "Web App", "Machine Learning"].map((category) => (
+          {["All", "Full-Stack", "Front-end"].map((category) => (
             <button
               key={category}
               className={`toggle-button ${toggle === category ? "active" : ""}`}

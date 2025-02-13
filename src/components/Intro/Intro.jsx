@@ -28,8 +28,8 @@ const Intro = () => {
       {/* Left Section */}
       <div className="i-left">
         <div className="i-name">
-          <span style={{ color: darkMode ? "white" : "" }}>Hey! I Am</span>
-          <span>Santhosh S</span>
+          <span style={{ color: darkMode ? "white" : "" }} className="into">Hey! I Am</span>
+          <span className="into">Santhosh S</span>
           <span className="des" style={{ color: darkMode ? "white" : "", width: "330px" }}>
             A passionate Full Stack Developer with expertise in both front-end and back-end technologies, delivering high-quality, user-centric web applications. Skilled in crafting responsive and visually appealing web designs, ensuring optimal user experiences, and writing efficient, scalable code. Committed to producing top-notch solutions that meet both functional and aesthetic requirements.
           </span>
