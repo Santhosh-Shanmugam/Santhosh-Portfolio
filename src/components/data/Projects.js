@@ -57,6 +57,7 @@ export const projects = [
   },
   {
     id: 8,
+    title: "JobFinder App",
     description: "A job search platform that helps users find job listings, filter results, and get relevant career opportunities.",
     image: jobfinder,
     tags: ["React","Tailwind css"],

@@ -27,3 +27,9 @@ yarn.lock
 README.md
 src/img/
 src/fonts
+
+
+
+node_modules
+img
+resume.pdf
