@@ -151,7 +151,8 @@
     }
 
     .about-image {
-        order: 1; /* Keeps image on top */
+        display: none;
+        /* order: 1; Keeps image on top */
     }
 
     .profile-img {
