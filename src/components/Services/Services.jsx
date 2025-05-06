@@ -30,7 +30,7 @@ const Services = () => {
     {
       id: "uiux",
       title: "UI/UX Design",
-      description: "Crafting user-friendly interfaces and intuitive user experiences using modern design principles. Expertise in wireframing, prototyping, and ensuring responsive designs.",
+      description: "Crafting user-friendly interfaces and intuitive user experiences using modern design principles. Also prototyping and ensuring responsive designs.",
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z" stroke={darkMode ? "#ffffff" : "#6b6b6b"} strokeWidth="1.5"/>
@@ -43,7 +43,7 @@ const Services = () => {
     {
       id: "webdev",
       title: "Web Development",
-      description: "Building dynamic and responsive websites using the MERN stack (MongoDB, Express, React, Node.js). Skilled in API integration, Spring Boot framework, and implementing JWT for secure authentication.",
+      description: "Building dynamic and responsive websites using the MERN stack (MongoDB, Express, React, Node.js). Implementing JWT for secure authentication.",
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 16V7C20 5.89543 19.1046 5 18 5H6C4.89543 5 4 5.89543 4 7V16C4 17.1046 4.89543 18 6 18H18C19.1046 18 20 17.1046 20 16Z" stroke={darkMode ? "#ffffff" : "#6b6b6b"} strokeWidth="1.5"/>
@@ -56,8 +56,8 @@ const Services = () => {
     },
     {
       id: "mobiledev",
-      title: "Mobile App Development",
-      description: "Creating cross-platform mobile applications using React Native. Ensuring responsive designs, smooth functionality, and a seamless user experience tailored to business needs.",
+      title: "Agile Development",
+      description: "Emphasizing clean code architecture, performance optimization, and maintainability using agile development practices and modern frameworks.",
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="7" y="2" width="10" height="20" rx="2" stroke={darkMode ? "#ffffff" : "#6b6b6b"} strokeWidth="1.5"/>
