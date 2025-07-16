@@ -18,7 +18,7 @@ const Education = () => {
             <FaGraduationCap className="icon" />
             <h2 className="Edu_degree" style={{ color: darkMode ? "white" : "" }}>BE CSE</h2>
             <p className="Edu_institution" style={{ color: darkMode ? "white" : "" }}>Kongu Engineering College</p>
-            <p className="Edu_score">CGPA: 8.21*</p>
+            <p className="Edu_score">CGPA: 8.22*</p>
             <p className="Edu_institution" style={{ color: darkMode ? "white" : "" }}>(2022 - Present)</p>
           </div>
           <div className="Edu_card">

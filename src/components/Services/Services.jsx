@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import "./Services.css";
-// import Resume from './resume.pdf';
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 
